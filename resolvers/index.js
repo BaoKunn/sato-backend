@@ -8,7 +8,6 @@ export const resolvers = {
         },
         folder: (parent, args) => {
             const folderId = args.folderId;
-            console.log(folderId);
             return fakeData.folders.find(folder => folder.id === folderId);
         }
     },
